@@ -14,7 +14,7 @@ out_dir = "docs"
 asset_dir = "assets"
 
 [web.app]
-base_path = "https://github.com/JerryAchrich/JerryAchrich.github.io"
+base_path = "."
 
 # HTML title tag content
 title = "jerry-achrich"
