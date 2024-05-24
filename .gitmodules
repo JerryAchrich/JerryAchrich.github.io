@@ -1,0 +1,3 @@
+[submodule "hackernews"]
+	path = hackernews
+	url = https://github.com/JerryAchrich/Hackernews
