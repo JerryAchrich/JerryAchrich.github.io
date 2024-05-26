@@ -50,7 +50,6 @@ fn NavBar() -> Element {
         nav { class: "navbar",
             // img { src: "profile_pic.png", alt: "", width: "50px" }
             ul { class: "navlist",
-                li { width: "50px" }
                 li {
                     Link { to: Route::Home {}, "Home" }
                 }
