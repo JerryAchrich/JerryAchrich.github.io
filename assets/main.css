@@ -11,6 +11,9 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     background-color: #222222;
 }
 
