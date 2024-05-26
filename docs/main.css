@@ -1,40 +1,38 @@
 body {
-    background-color: #111216;
+    background-color: #666666;
+    padding-top: 50px;
 }
 
-#main {
-    margin: 0;
+.navbar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #222222;
 }
 
-#links {
-    width: 400px;
-    text-align: left;
-    font-size: x-large;
-    color: white;
+.navlist {
     display: flex;
-    flex-direction: column;
+    list-style: none;
 }
 
-#links a {
-    color: white;
+.navlist li {
+    margin-right: 50px;
+}
+
+.navlist li a {
     text-decoration: none;
-    margin-top: 20px;
-    margin: 10px;
-    border: white 1px solid;
-    border-radius: 5px;
-    padding: 10px;
+    height: 50px;
+    font-size: 18px;
+    color: #666666;
+    letter-spacing: 1px;
+    transition: color 1s, letter-spacing 1s;
 }
 
-#links a:hover {
-    background-color: #1f1f1f;
-    cursor: pointer;
-}
-
-#header {
-    max-width: 1200px;
+.navlist li a:hover {
+    letter-spacing: 2px;
+    color: #aaaaaa;
 }

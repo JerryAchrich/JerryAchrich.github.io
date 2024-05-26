@@ -47,8 +47,9 @@ pub fn App() -> Element {
 #[component]
 fn NavBar() -> Element {
     rsx! {
-        nav {
-            ul {
+        nav { class: "navbar",
+            // img { src: "profile_pic.png", alt: "", width: "50px" }
+            ul { class: "navlist",
                 li {
                     Link { to: Route::Home {}, "Home" }
                 }
@@ -57,6 +58,15 @@ fn NavBar() -> Element {
                 }
                 li {
                     Link { to: Route::BlogList {}, "Blog" }
+                }   
+                li {
+                    Link { to: Route::Home {}, "Resume" }
+                }
+                li {
+                    Link { to: "https://github.com/JerryAchrich/", i { class: "fa fa-github" } }
+                }
+                li {
+                    Link { to: "https://www.linkedin.com/in/jerry-achrich/", i { class: "fa fa-linkedin-square" } }
                 }
             }
         }
@@ -66,7 +76,7 @@ fn NavBar() -> Element {
 
 #[component]
 fn Home() -> Element {
-    rsx! { h1 { "Welcome to the Dioxus Blog!" } }
+    rsx! { h1 { text_align: "center", "Jerry Achrich" } }
 }
 
 #[component]
